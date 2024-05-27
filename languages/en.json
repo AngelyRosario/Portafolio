@@ -1,0 +1,55 @@
+{
+    "menu": {
+        "item2": "About Me",
+        "item3": "Skills",
+        "item4": "Education",
+        "item5": "Projects",
+        "item6": "Contact"
+    },
+
+    "home": {
+        "home_text-1": "Hello! I am",
+        "home_text-3": "Full Stack",
+        "parrafo-info": "Systems Engineering student. As a lover of intuitive and aesthetically pleasing designs, I strive to create projects that provide the best user experience.",
+        "cv_button": "Download CV",
+        "contact_button": "Contact"
+    },
+
+    "sobre-mi": {
+        "title": "About Me",
+        "texto_sobreMi": "I am enthusiastic 😃 about my programming journey with excitement and passion.<br>💻 I am currently exploring HTML, CSS, and JavaScript, and I am also diving into SQL, Power BI, and Go.<br>📊 The depth of technical knowledge fascinates me, and I am always open to connecting and learning together."
+    },
+
+    "habilidades": {
+        "title": "Skills"
+    },
+
+    "formacion": {
+        "title": "Education",
+        "formacion1": "Systems Engineering",
+        "tiempo-formacion1": "2020 - Present",
+        "formacion2": "Full-Stack Developer",
+        "tiempo-formacion2": "2022 - Present",
+        "formacion3": "Business Intelligence"
+    },
+
+    "proyectos": {
+        "title": "Projects",
+        "title-proyecto1": "WEEK 01",
+        "info-proyecto1": "All activities from week 01",
+        "title-proyecto2": "WEEK 02",
+        "info-proyecto2": "All activities completed in week 02",
+        "title-proyecto3": "WEEK 03",
+        "info-proyecto3": "Activities from week 03",
+        "title-proyecto4": "WEEK 05",
+        "info-proyecto4": "Introduction to JavaScript exercises",
+        "title-proyecto5": "WEEK 06",
+        "info-proyecto5": "Activities on payment gateways PayPal and Google AdSense"
+    },
+
+    "contacto": {
+        "title": "Contact",
+        "text": "Fill out the form below and I will get back to you as soon as possible.",
+        "btn-enviar": "Send"
+    }
+}

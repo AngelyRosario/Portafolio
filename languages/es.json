@@ -1,0 +1,57 @@
+{
+    "menu": {
+        "item2": "Sobre mí",
+        "item3": "Habilidades",
+        "item4": "Formación",
+        "item5": "Proyectos",
+        "item6": "Contacto"
+    },
+
+    "home": {
+        "home_text-1": "Hola! Soy",
+        "home_text-3": "Full Stack",
+        "parrafo-info": "Estudiante de Ingenieria de Sistemas. Como persona amante a los diseños intuitivos y estéticamente agradables busco crear proyectos que brinden la mejor experiencia para el usuario.",
+        "cv_button": "Descargar CV",
+        "contact_button": "Contacto"
+    },
+
+    "sobre-mi": {
+        "title": "Sobre mí",
+        "texto_sobreMi": "Me entusiasma 😃 mi aventura en la programación con ilusión y pasión.<br>💻 Actualmente estoy explorando HTML, CSS y JavaScript, y también estoy sumergiéndome en SQL, Power BI y Go.<br>📊 La profundidad del conocimiento técnico me cautiva y siempre estoy abierto a conectarme y aprender juntos."
+        
+    },
+  
+
+    "habilidades": {
+        "title": "Habilidades"
+    },
+
+    "formacion": {
+        "title": "Formación",
+        "formacion1": "Ingenieria de Sistemas",
+        "tiempo-formacion1": "2020 - En curso",
+        "formacion2": "Desarrolladora Full-Stack",
+        "tiempo-formacion2": "2022 - En curso",
+        "formacion3": "Inteligencia de Negocios"
+    },
+
+    "proyectos": {
+        "title": "Proyectos",
+        "title-proyecto1": "SEMANA 01",
+        "info-proyecto1": "Todas las actividades de la semana 01",
+        "title-proyecto2": "SEMANA 02",
+        "info-proyecto2": "Todas las actividades realizados de la semana 02",
+        "title-proyecto3": "SEMANA 03",
+        "info-proyecto3": "Actividades de la Semana 03.",
+        "title-proyecto4": "SEMANA 05",
+        "info-proyecto4": "Ingreso a Ejercicios de Javascript.",
+        "title-proyecto5": "SEMANA 06",
+        "info-proyecto5": "Actividades de pasarelas de pago Paypla y Google Adsense"
+    },
+
+    "contacto": {
+        "title": "Contacto",
+        "text": "Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+        "btn-enviar": "Enviar"
+    }
+}
