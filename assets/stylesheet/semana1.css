@@ -1,0 +1,213 @@
+/* styles.css */
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente principal para el texto */
+    background: linear-gradient(to right, #2d6073, #d8ebf0); /* Fondo en gradiente que va de un color azul oscuro a un azul claro */
+    color: #fff; /* Color del texto en blanco */
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    padding: 0; /* Elimina el padding por defecto del cuerpo */
+}
+
+/* Estilo para la sección con clase 'semanal' */
+.semanal {
+    background: linear-gradient(to bottom right, #292929, #3c3c3c); /* Fondo en gradiente oscuro para la sección */
+    color: #fff; /* Color del texto en blanco */
+    padding: 2rem; /* Espaciado interno de 2rem alrededor del contenido */
+    margin: 2rem auto; /* Margen de 2rem en la parte superior e inferior, centrado horizontalmente */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    max-width: 1200px; /* Ancho máximo de la sección de 1200px */
+    position: relative; /* Posicionamiento relativo para elementos hijos */
+    display: flex; /* Utiliza Flexbox para disposición de elementos internos */
+    flex-direction: row; /* Disposición de elementos en fila (dos columnas) */
+}
+
+/* Estilo para el botón con clase 'volver-atras' */
+.volver-atras {
+    background-color: #2196f3; /* Color de fondo azul para el botón */
+    padding: 0.8rem 1.5rem; /* Espaciado interno de 0.8rem en la parte superior e inferior y 1.5rem en los lados */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    font-size: 1rem; /* Tamaño de fuente de 1rem */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    border: none; /* Elimina el borde del botón */
+    color: #fff; /* Color del texto en blanco */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor relativo */
+    top: 1rem; /* Posiciona el botón a 1rem desde la parte superior del contenedor */
+    left: 1rem; /* Posiciona el botón a 1rem desde el borde izquierdo del contenedor */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para color de fondo y transformaciones */
+}
+
+/* Estilo para el botón 'volver-atras' al pasar el cursor sobre él */
+.volver-atras:hover {
+    background-color: #1976d2; /* Color de fondo más oscuro cuando se pasa el cursor sobre el botón */
+    transform: scale(1.05); /* Efecto de aumento (escala) al pasar el cursor */
+}
+
+/* Estilo para los botones con clases 'btn-demo' y 'btn-repo' */
+.btn-demo, .btn-repo {
+    background-color: #5dc1b9; /* Color de fondo verde claro para los botones */
+    color: #fff; /* Color del texto en blanco */
+    border: none; /* Elimina el borde del botón */
+    padding: 0.8rem 1.5rem; /* Espaciado interno de 0.8rem en la parte superior e inferior y 1.5rem en los lados */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    font-size: 1rem; /* Tamaño de fuente de 1rem */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para color de fondo y transformaciones */
+}
+
+/* Estilo específico para el botón 'btn-repo' */
+.btn-repo {
+    background-color: #137fd9; /* Color de fondo azul para el botón 'btn-repo' */
+}
+
+/* Estilo para el botón 'btn-demo' al pasar el cursor sobre él */
+.btn-demo:hover {
+    background-color: #4aaea2; /* Color de fondo más oscuro cuando se pasa el cursor sobre el botón */
+    transform: scale(1.05); /* Efecto de aumento (escala) al pasar el cursor */
+}
+
+/* Estilo para el botón 'btn-repo' al pasar el cursor sobre él */
+.btn-repo:hover {
+    background-color: #0e68b4; /* Color de fondo más oscuro cuando se pasa el cursor sobre el botón */
+    transform: scale(1.05); /* Efecto de aumento (escala) al pasar el cursor */
+}
+
+/* Estilo para el contenedor de imágenes */
+.contenedor-imagenes {
+    padding: 2rem; /* Espaciado interno de 2rem alrededor del contenido */
+    flex: 1; /* Permite que el contenedor de imágenes crezca y ocupe el espacio disponible */
+    display: flex; /* Utiliza Flexbox para disposición de elementos internos */
+    flex-direction: column; /* Disposición de elementos en columna */
+    align-items: center; /* Alinea los elementos en el centro horizontalmente */
+    gap: 2rem; /* Espaciado de 2rem entre los elementos hijos */
+}
+
+/* Estilo para el contenedor de imagen */
+.imagen {
+    width: 80%; /* Ancho del contenedor de la imagen al 80% del ancho del contenedor padre */
+    padding: 1rem; /* Espaciado interno de 1rem alrededor del contenido */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para las imágenes dentro del contenedor */
+.imagen img {
+    width: 100%; /* Ancho de la imagen al 100% del ancho del contenedor */
+    max-width: 400px; /* Tamaño máximo de la imagen de 400px */
+    border-radius: 10px; /* Bordes redondeados de 10px en la imagen */
+    margin-bottom: 1.5rem; /* Espaciado inferior de 1.5rem entre imágenes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para resaltar la imagen */
+}
+
+/* Estilo para el contenedor de texto */
+.contenedor-texto {
+    flex: 1; /* Permite que el contenedor de texto crezca y ocupe el espacio disponible */
+    padding: 2rem; /* Espaciado interno de 2rem alrededor del contenido */
+}
+
+/* Estilo para los encabezados h1, h2, h3 */
+h1, h2, h3 {
+    background: linear-gradient(to right, #5dc1b9, #0e95ef); /* Gradiente vibrante de colores en los encabezados */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto en navegadores WebKit */
+    -webkit-text-fill-color: transparent; /* Hace que el texto sea transparente para mostrar el gradiente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor definición del texto */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0.5rem 0; /* Espaciado interno de 0.5rem en la parte superior e inferior */
+    animation: textMove 3s infinite ease-in-out; /* Animación para el movimiento del texto */
+}
+
+/* Estilo específico para el encabezado h1 */
+h1 {
+    font-size: 2.5rem; /* Tamaño de fuente de 2.5rem */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: #fff; /* Color del texto en blanco */
+}
+
+/* Estilo específico para el encabezado h2 */
+h2 {
+    font-size: 2rem; /* Tamaño de fuente de 2rem */
+    border-bottom: 3px solid #137fd9; /* Borde inferior azul de 3px */
+    padding-bottom: 0.5rem; /* Espaciado interno en la parte inferior de 0.5rem */
+    display: flex; /* Utiliza Flexbox para disposición de elementos internos */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    gap: 1rem; /* Espacio de 1rem entre imagen y texto */
+}
+
+/* Estilo para la imagen dentro del encabezado h2 */
+h2 img {
+    width: 40px; /* Ancho de 40px para la imagen en h2 */
+    height: 40px; /* Altura de 40px para la imagen en h2 */
+}
+
+/* Estilo específico para el encabezado h3 */
+h3 {
+    font-size: 1.5rem; /* Tamaño de fuente de 1.5rem */
+    color: #0e95ef; /* Color del texto azul claro */
+}
+
+/* Estilo para secciones con clases específicas */
+.descripcion, .topicos-aprendidos, .resultados, .tecnologias-utilizadas, .configuracion {
+    margin-bottom: 2rem; /* Espaciado inferior de 2rem entre secciones */
+}
+
+/* Animación de movimiento para el texto */
+@keyframes textMove {
+    0% {
+        transform: translateY(0); /* Posición inicial del texto */
+    }
+    50% {
+        transform: translateY(-10px); /* Movimiento hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Regresa a la posición inicial */
+    }
+}
+
+/* Estilo para el contenedor de botones */
+.botones {
+    display: flex; /* Usa Flexbox para alinear los botones horizontalmente */
+    justify-content: flex-end; /* Alinea los botones al final del contenedor */
+    gap: 1rem; /* Espaciado de 1rem entre los botones */
+    margin-top: 2rem; /* Margen superior de 2rem */
+}
+
+/* Estilo para los botones */
+.btn_demo, .btn_repo {
+    background-color: #137fd9;; /* Color de fondo verde para el botón 'DEMO' */
+    color: #fff; /* Color del texto en blanco */
+    border: none; /* Elimina el borde del botón */
+    padding: 0.8rem 1.5rem; /* Espaciado interno del botón */
+    border-radius: 8px; /* Bordes redondeados de 8px */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves para color de fondo y transformación */
+    display: flex; /* Usa Flexbox para alinear los elementos internos */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    gap: 0.5rem; /* Espacio de 0.5rem entre el ícono y el texto */
+}
+
+/* Estilo específico para el botón 'btn_repo' */
+.btn_repo {
+    background-color: #333; /* Color de fondo oscuro para el botón 'REPO' */
+}
+
+/* Estilo para el botón 'btn_demo' al pasar el cursor sobre él */
+.btn_demo:hover {
+    background-color: #137fd9; /* Color de fondo más oscuro para el botón 'DEMO' al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento (escala) al pasar el cursor */
+}
+
+/* Estilo para el botón 'btn_repo' al pasar el cursor sobre él */
+.btn_repo:hover {
+    background-color: #555; /* Color de fondo más oscuro para el botón 'REPO' al pasar el cursor */
+    transform: scale(1.05); /* Efecto de aumento (escala) al pasar el cursor */
+}
+
+/* Estilo para las imágenes dentro de los botones */
+.btn_demo img, .btn_repo img {
+    width: 24px; /* Ancho de 24px para los íconos */
+    height: 24px; /* Altura de 24px para los íconos */
+    vertical-align: middle; /* Alinea verticalmente los íconos con el texto */
+}

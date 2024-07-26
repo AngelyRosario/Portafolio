@@ -7,7 +7,7 @@
 :root {
     --white: #FFFFFF;
     --light-grey: #FFFFFF;
-    --beaver: #A78976;
+    --beaver: #5dc1b9;
     --black: #141414;
     --eerie-black: #1F1F1F;
     --jet: #292929;
@@ -594,7 +594,7 @@ img.logo-google {
 }
 
 /* Proyectos */
-
+/* Sección de Proyectos */
 .proyectos {
     background-color: #2d6073;
     width: 100%;
@@ -617,11 +617,10 @@ img.logo-google {
     display: none;
 }
 
+/* Contenedor de Tarjetas de Proyectos */
 .cards_container--proyectos {
-    
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(0, 1fr)); /* Cambio a 4 filas */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste automático */
     gap: 3rem;
     justify-content: center;
     padding-bottom: 5rem;
@@ -630,10 +629,10 @@ img.logo-google {
 .cards--proyectos {
     border-radius: 20px;
     padding-bottom: 2rem;
-    background-color: var(--eerie-black);
-    min-width: 33rem;
-    max-width: 38rem;
+    background-color: #333333; /* Gris oscuro */
+    color: #FFFFFF; /* Letras blancas */
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+    border: 2px solid #65b8a6; /* Borde resaltante turquesa */
 }
 
 .card_semana1 {
@@ -642,7 +641,7 @@ img.logo-google {
 
 .card_semana2 {
     margin-bottom: 4rem;
-    border: 1px solid var(--eerie-black);
+    border: 1px solid #65b8a6; /* Borde resaltante turquesa */
 }
 
 .container_imgCard--proyectos {
@@ -682,7 +681,7 @@ img.logo-google {
     justify-content: center;
 }
 
-.container_btn--proyectos a{
+.container_btn--proyectos a {
     text-decoration: none;
     display: inline-block;
     margin: 0 1.5rem;
@@ -702,8 +701,8 @@ img.logo-google {
 .btn_demo {
     padding: .9rem 0;
     border: none;
-    background-color: #65b8a6;
-    color: var(--eerie-black);
+    background-color: #65b8a6; /* Color turquesa */
+    color: #FFFFFF; /* Letras blancas */
 }
 
 .btn_repo {
@@ -734,6 +733,20 @@ img.logo-google {
     box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
     transition: all .4s ease;
 }
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .cards_container--proyectos {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Ajuste automático */
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards_container--proyectos {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /* Ajuste automático */
+    }
+}
+
 
 /* Contacto */
 
@@ -799,7 +812,7 @@ img.logo-google {
 
 .form-contact .input-invalid {
     border: 1px solid #574438;
-    color: #574438;
+    color: #445738;
 }
 
 .form-contact textarea {
@@ -831,7 +844,7 @@ img.logo-google {
 
 
 .form-contact textarea::-webkit-scrollbar-thumb {
-    background-color: #574438;
+    background-color: #1F1F1F;
 }
 
 
@@ -864,7 +877,7 @@ img.logo-google {
 }
 
 .btn_form--contacto button:active {
-    background: #574438;
+    background: #1F1F1F;
 }
 
 /* Footer */
@@ -937,7 +950,7 @@ footer {
 .go-top-button {
     width: 0rem;
     height: 0rem;
-    background: rgba(167, 137, 118, 1);
+    background: #137fd9;
     box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
     border-radius: 50%;
     cursor: pointer;
@@ -1065,4 +1078,72 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 0 2rem 3rem 2rem;
+}
+.cards_container--proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards--proyectos {
+    background-color: var(#292929); /* Color de fondo para las tarjetas */
+    border: 1px solid var(-beaver-); /* Borde de las tarjetas */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para las tarjetas */
+    overflow: hidden; /* Ocultar desbordamiento */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones para efectos de hover */
+}
+
+.cards--proyectos:hover {
+    transform: translateY(-10px); /* Efecto de elevarse al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra al pasar el ratón */
+}
+
+.container_imgCard--proyectos img {
+    width: 100%; /* Imagen a ancho completo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.container_textCard--proyectos {
+    padding: 15px; /* Espaciado interior para el texto */
+    text-align: center; /* Alinear texto al centro */
+}
+
+.container_textCard--proyectos h2 {
+    margin: 0; /* Quitar margen superior e inferior */
+    font-size: 1.5rem; /* Tamaño de fuente para el título */
+    color: var(--white); /* Color del título */
+}
+
+.container_textCard--proyectos p {
+    margin: 10px 0 0; /* Margen superior de 10px, sin margen inferior */
+    font-size: 1.5rem; /* Tamaño de fuente para el párrafo */
+    color: var(--white); /* Color del párrafo */
+}
+
+.container_btn--proyectos {
+    display: flex; /* Disposición en fila */
+    justify-content: center; /* Alinear elementos al centro */
+    gap: 10px; /* Espacio entre botones */
+    padding: 15px; /* Espaciado interior */
+}
+
+.btn_demo, .btn_repo {
+    background-color: var(--beaver); /* Color de fondo del botón */
+    color: var(--white); /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    cursor: pointer; /* Cambiar cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Transición para efecto de hover */
+}
+
+.btn_demo:hover, .btn_repo:hover {
+    background-color: var(--black); /* Cambiar color de fondo al pasar el ratón */
+}
+
+.btn_demo img, .btn_repo img {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+    vertical-align: middle; /* Alinear verticalmente el icono */
 }
